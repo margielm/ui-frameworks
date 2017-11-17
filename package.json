@@ -1,0 +1,17 @@
+{
+  "name": "wireframes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server --watch=src"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0-beta.2",
+    "foundation-sites": "^6.4.4-rc1",
+    "live-server": "^1.2.0",
+    "material-components-web": "^0.25.0",
+    "popper.js": "^1.12.9",
+    "semantic-ui": "^2.2.13"
+  }
+}
