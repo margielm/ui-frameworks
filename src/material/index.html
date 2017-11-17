@@ -3,60 +3,158 @@
 <head>
     <title>Material Components for the web</title>
     <link rel="stylesheet"
-          href="/node_modules/material-components-web/dist/material-components-web.css">
+          href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css">
+    <style>
+        .gray {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .hero {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .hero > div {
+            padding: 70px;
+        }
+
+        .ma {
+            margin: auto;
+        }
+
+        .container {
+
+        }
+
+        .container > div, .hero > div {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .rounded {
+            border-radius: 50%;
+        }
+        .centered{
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
+<body class="mdc-typography">
 <main>
-    <header class="mdc-toolbar">
+    <header class="mdc-toolbar gray">
         <div class="mdc-toolbar__row">
-            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-                <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
-                <span class="mdc-toolbar__title">Title</span>
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+                <a href="" class="mdc-toolbar__icon" style="color: black">one</a>
+                <a href="" class="mdc-toolbar__icon" style="color: black">two</a>
             </section>
         </div>
-        <div class="mdc-toolbar__row">
-            ...
-        </div>
     </header>
-    <h1 class="mdc-typography--display1">Tell us about yourself!</h1>
-
-    <form action="#" id="greeting-form">
-        <div>
-            <div class="mdc-form-field">
-                <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
-                    <input id="firstname" type="text" class="mdc-text-field__input">
-                    <label for="firstname" class="mdc-text-field__label">
-                        First Name
-                    </label>
-                    <div class="mdc-text-field__bottom-line"></div>
+    <div class="container" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div style=" padding: 70px;">
+            <h1 class="mdc-typography--display3">Welcome!</h1>
+            <p class="mdc-typography--headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales
+                venenatis nunc, vitae commodo quam rhoncus eu. Pellentesque sem lectus, eleifend ac eleifend vitae,
+                euismod ut mauris.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div style="text-align: center">
+            <h1 class="mdc-typography--display2">Services</h1>
+            <p class="mdc-typography-body1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales venenatis nunc, vitae commodo quam
+                rhoncus eu. Pellentesque sem lectus, eleifend ac eleifend vitae, euismod ut mauris
+            </p>
+        </div>
+        <div class="mdc-grid mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                    <div class="mdc-card mdc-elevation-transition mdc-elevation--z2">
+                        <section class="mdc-card__media" style="align-items: center">
+                            <img src="http://placehold.it/200x200?text=Service%20A" class="rounded">
+                        </section>
+                        <section class="mdc-card__primary">
+                            <h2 class="mdc-card__title mdc-card__title--large centered">Service A</h2>
+                        </section>
+                        <section class="mdc-card__supporting-text centered">Etiam fringilla hendrerit leo, sed laoreet felis
+                            vehicula id. Nam dictum porttitor est id tincidunt. Duis tempor volutpat massa ut imperdiet.
+                            Curabitur eget ligula feugiat, semper nisl eget, tempus lorem.
+                        </section>
+                    </div>
                 </div>
-            </div>
-
-            <div class="mdc-form-field">
-                <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
-                    <input id="lastname" type="text" class="mdc-text-field__input">
-                    <label for="lastname" class="mdc-text-field__label">
-                        Last Name
-                    </label>
-                    <div class="mdc-text-field__bottom-line"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                    <div class="mdc-card mdc-elevation-transition mdc-elevation--z2">
+                        <section class="mdc-card__media" style="align-items: center"><img
+                                src="http://placehold.it/200x200?text=Service%20B" class="rounded">
+                        </section>
+                        <section class="mdc-card__primary">
+                            <h2 class="mdc-card__title mdc-card__title--large centered">Service B</h2>
+                        </section>
+                        <section class="mdc-card__supporting-text centered">Etiam fringilla hendrerit leo, sed laoreet felis
+                            vehicula id. Nam dictum porttitor est id tincidunt. Duis tempor volutpat massa ut imperdiet.
+                            Curabitur eget ligula feugiat, semper nisl eget, tempus lorem.
+                        </section>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                    <div class="mdc-card mdc-elevation-transition mdc-elevation--z2">
+                        <section class="mdc-card__media" style="align-items: center"><img
+                                src="http://placehold.it/200x200?text=Service%20C" class="rounded">
+                        </section>
+                        <section class="mdc-card__primary">
+                            <h2 class="mdc-card__title mdc-card__title--large">Service C</h2>
+                        </section>
+                        <section class="mdc-card__supporting-text centered">Etiam fringilla hendrerit leo, sed laoreet felis
+                            vehicula id. Nam dictum porttitor est id tincidunt. Duis tempor volutpat massa ut imperdiet.
+                            Curabitur eget ligula feugiat, semper nisl eget, tempus lorem.
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <button type="submit"
-                class="mdc-button
-                   mdc-button--raised
-                   mdc-ripple-surface"
-                data-mdc-auto-init="MDCRipple">
-            Print Greeting
+    </div>
+    <div style="text-align: center; padding: 70px;">
+        <button class="mdc-button mdc-button--stroked secondary-stroked-button mdc-ripple-upgraded"
+                style="border-radius: 2em">
+            All Services &rarr;
         </button>
-    </form>
-
-    <!-- The p element below is where we'll eventually output our greeting -->
+    </div>
     <p class="mdc-typography--headline" id="greeting"></p>
+    <div class="hero">
+        <div>
+            Aliquam vitae sapien ac tellus cursus maximus sit amet eget dui. Pellentesque molestie purus id molestie
+            fermentum. Vivamus tristique pellentesque quam. Cras vitae euismod odio. Suspendisse pharetra feugiat sem.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse gravida
+            vitae ligula in condimentum. Sed a velit elementum, ornare tellus nec, sodales est. Pellentesque habitant
+            morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas. Duis porttitor quam et velit venenatis, ac
+            rhoncus metus pellentesque. Integer turpis turpis, lacinia sed placerat non, sagittis vitae neque. Nullam
+            porta
+            arcu in posuere rutrum. Sed dapibus tincidunt massa, eget posuere risus interdum non. Nam eu fringilla ex.
+            Curabitur condimentum molestie elementum.
+        </div>
+    </div>
 </main>
 
-<script src="/node_modules/material-components-web/dist/material-components-web.js"></script>
-<script>mdc.autoInit()</script>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+<script>
+    (() => {
+        const elements = document.getElementsByClassName('mdc-elevation-transition');
+        const low = 'mdc-elevation--z2';
+        const high = 'mdc-elevation--z14';
+        Array.from(elements).forEach((elem) => {
+            elem.addEventListener('mouseenter', function () {
+                this.classList.remove(low);
+                this.classList.add(high);
+            });
+            elem.addEventListener('mouseleave', function () {
+                this.classList.remove(high);
+                this.classList.add(low);
+            });
+        });
+    })();
+</script>
 </body>
 </html>
